@@ -72,6 +72,60 @@ button{
     border: none;
 }
 
+.mobile{
+    display: none;
+}
 button:hover{
     background-color:darkolivegreen;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .body{
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    body{
+        background-color: antiquewhite;
+    }
+    .design{
+        display: inline;
+        margin: auto;
+        align-self: center;
+
+    }
+
+    .text{
+        margin-top: -15px;
+        border-top-right-radius: 0px;
+        width: 190px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom-left-radius: 15px;
+    }
+
+    img{
+        width: 230px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        
+        
+    }
+
+    h3{
+        font-weight: lighter;
+        letter-spacing: 5px;
+        color: gray;
+        font-size: 14px;
+    }
+
+    
 }

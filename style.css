@@ -1,10 +1,12 @@
 body{
     font-family: 'Circular Std';
     font-style: normal;
-    margin: 0;
+    margin: auto;
     /* background-color: red; */
+   
     
 }
+
 
 
 
@@ -12,14 +14,14 @@ body{
     margin: 0 auto;
     height: 1000px;
     width: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 7.62%, rgba(0, 225, 198, 0.06) 25.5%, #FFFFFF 70.92%);
+    background: linear-gradient(180deg, #FFFFFF 5.92%, #C3F8F2 80%, #FFFFFF 10% );
     position: relative;
     overflow: hidden;
+    z-index: -10;
 }   
 
 nav{
     height: 75px;
-    
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -102,21 +104,22 @@ nav{
     height: 462.48px;
     left: -480.77px;
     top: 250px;
-background: #00B6F0;
+background: #00B6F0 !important;
 
 border-radius: 50%;
-z-index: -5;
+z-index: -2;
 }
 
 .intro-circle2{
     position: absolute;
-width: 712.45px;
-height: 475.1px;
-left: 301px;
-top: 408px;
-border-radius: 50%;
-background: #F3CD03;
-z-index: -5;
+    width: 712.45px;
+    height: 475.1px;
+    left: 301px;
+    top: 408px;
+    border-radius: 50%;
+    background-color: #F3CD03;
+   
+    z-index: -2;
 }
 
 
@@ -142,10 +145,8 @@ z-index: -5;
 
 .buttons{
     display: flex;
-    gap: 20px;
-    
-    
-    
+    gap: 20px; 
+    z-index: 5000;   
 }
 
 .get-started{
@@ -183,10 +184,12 @@ z-index: -5;
 .dash img{
     margin-top: 50px;
     width: 380px;
-    height: 295px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    z-index: 6;
+    opacity: 1000%;
+    
 
 
 }
@@ -252,7 +255,7 @@ z-index: -5;
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #00B6F0;
-    border: none;
+    border: solid 1px #00B6F0;
     background: #FFFFFF;
     border-radius: 20px;
     flex-direction: row;
@@ -280,7 +283,7 @@ z-index: -5;
     position: absolute;
     width: 362.46px;
     height: 362.48px;
-    left: -250.77px;
+    left: -270.77px;
     top: 10px;
     background: #00B6F0;
 
@@ -311,12 +314,17 @@ z-index: -5;
     padding: 15px 0;
 }
 
-.con-features{
+.con-features1{
     text-align: center;
     
 }
 
-.con-features img{
+.con-features2{
+    text-align: center;
+    
+}
+
+.card-features img{
     width: 300px;
     height: 251px;
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
@@ -324,7 +332,7 @@ z-index: -5;
     margin: 55px 0px;
 }
 
-.con-features h3{
+.card-features h3{
     /* width: 233px;
     height: 42px; */
     font-weight: 450;
@@ -334,7 +342,7 @@ z-index: -5;
     color: #20262A;
 }
 
-.con-features h4{
+.card-features h4{
     font-style: normal;
     font-weight: 450;
     font-size: 18px;
@@ -385,7 +393,7 @@ z-index: -5;
 .facebook{
     text-align: justify;
     display: flex;
-    width: 340px;
+    width: 100%;
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -412,7 +420,7 @@ color: #505D6F;
 
 .f-num{
     text-align: right;
-    width: 340px;
+    width: 100%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -734,4 +742,291 @@ color: #FFFFFF;
 
 .fa-brands{
     letter-spacing: 20px;
+    color: #112D57;
+}
+
+@media (min-width: 680px){
+
+.intro-page{
+    height: 1500px;
+}
+.intro-container{
+    width: 480px;   
+}
+.intro-circle{
+    left: -380.77px;
+    
+}
+
+.intro-circle2{
+    left: 501px;
+}
+
+.buttons{
+    gap: 50px;    
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.dash img{
+    width: 580px;
+    
+}
+
+.navigate{
+    position: relative;
+    height: 700px;
+    background: #FFFFFF;
+
+}
+
+.con-navigate{
+    width: 580px;
+}
+
+
+
+.download{
+
+    margin-bottom: 15px;
+    width: 300px;
+    
+}
+
+
+
+.nav-btn-con{
+    width: 480px;
+}
+
+
+
+.features{
+    position: relative;
+    height: 1600px;
+    overflow: hidden;
+    
+}
+
+
+
+.intro-circle4{
+    left: 300.77px;
+}
+
+.card-features{
+    width: 400px;
+}
+
+
+.con-features1 img{
+    width: 450px;
+    height: 351px;
+}
+
+.con-features2 img{
+    width: 450px;
+    height: 351px;
+}
+
+
+
+.con-task{
+    width: 650px;
+}
+
+
+
+.con-testimonial {
+    width: 440px;
+}
+
+
+
+
+
+.intro-circle6{
+    left: 350px ;
+}
+
+
+
+
+}
+
+@media(min-width: 1020px){
+
+    
+    .intro-page{
+        overflow-y: visible;
+        background: linear-gradient(180deg, #FFFFFF 5.92%, #C3F8F2 40%, #FFFFFF 10% );
+        height: 2000px;
+    }
+    .intro-container{
+        width: 480px; 
+    }
+    .intro-circle{
+        left: -380.77px;
+        
+    }
+    
+    .intro-circle2{
+        left: 1701px;
+    }
+    
+    .buttons{
+        gap: 50px;    
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    
+    .dash img{
+        width: 1580px;
+        overflow-y: visible;
+    }
+    
+    .navigate{
+        position: relative;
+        height: 700px;
+        background: #FFFFFF;
+    
+    }
+    
+    .con-navigate{
+        width: 580px;
+    }
+    
+    
+    
+    .download{
+    
+        margin-bottom: 15px;
+        margin-right: 50px;
+        width: 180px;
+        
+    }
+
+    
+    
+    
+    
+    .nav-btn-con{
+        width: 480px;
+    }
+    
+    
+    
+    .features{
+        position: relative;
+        height: 1000px;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+        justify-self: center;
+        width: 100%;
+
+        
+    }
+
+    .card-features{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        width: 100% !important;
+
+    }
+
+    .con-features1{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1000px;
+        margin: 0 auto;
+        text-align: left;
+
+
+    }
+
+    .con-features1 p{
+        text-align: left;
+    }
+
+    .con-features2{
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+        text-align: right;
+
+
+    }
+
+    .con-features2 p{
+        text-align: right;
+    }
+
+    .text-features1{
+        width: 500px;
+        
+        margin-right: 300px; 
+        
+        position: relative;
+
+    
+
+    }
+
+    .text-features2{
+        width: 500px;
+        
+        margin-left: 300px; 
+        
+        position: relative;
+
+    
+
+    }
+
+    
+    
+    
+    
+    .intro-circle4{
+        left: 300.77px;
+    }
+    
+    .card-features{
+        width: 400px;
+    }
+    
+    
+    .con-features img{
+        width: 450px;
+        height: 351px;
+    }
+    
+    
+    
+    .con-task{
+        width: 650px;
+    }
+    
+    
+    
+    .con-testimonial {
+        width: 440px;
+    }
+    
+    
+    
+    
+    
+    .intro-circle6{
+        left: 350px ;
+    }
+    
 }

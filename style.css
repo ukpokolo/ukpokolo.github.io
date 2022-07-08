@@ -1,21 +1,50 @@
 body{
     font-family: 'Circular Std';
     font-style: normal;
+    margin: 0;
     /* background-color: red; */
 }
 
 .intro-page{
-    
     margin: 0 auto;
-    max-width: 380px;
-    height: 1100px;
+    height: 1000px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 7.62%, rgba(0, 225, 198, 0.06) 25.5%, #FFFFFF 70.92%);
+    
 } 
 
 
 .intro-container{
     padding: 150px 0;
     margin: 0 auto;
+    position: relative;
+    height: auto;
+    max-width: 380px;
+    
 }
+.intro-circle{
+    position: absolute;
+    width: 526.46px;
+    height: 462.48px;
+    left: -480.77px;
+    top: 250px;
+background: #00B6F0;
+
+border-radius: 50%;
+z-index: -5;
+}
+
+.intro-circle2{
+    position: absolute;
+width: 712.45px;
+height: 475.1px;
+left: 301px;
+top: 408px;
+border-radius: 50%;
+background: #F3CD03;
+z-index: -5;
+}
+
+
 .intro-page h1{
     font-family: 'Circular Std';
     font-style: normal;
@@ -39,6 +68,7 @@ body{
 .buttons{
     display: flex;
     gap: 20px;
+    
     
     
 }
@@ -89,6 +119,7 @@ body{
 .navigate{
     position: relative;
     height: 700px;
+    background: #FFFFFF;
 
 }
 
@@ -166,6 +197,31 @@ body{
 .features{
     position: relative;
     height: 1500px;
+    
+}
+
+.intro-circle3{
+    position: absolute;
+    width: 362.46px;
+    height: 362.48px;
+    left: -250.77px;
+    top: 10px;
+    background: #00B6F0;
+
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.intro-circle4{
+    position: absolute;
+    width: 362.46px;
+    height: 362.48px;
+    left: 200.77px;
+    top: 700px;
+    background: #F3CD03;
+
+    border-radius: 50%;
+    z-index: -2;
 }
 
 .card-features{
@@ -176,7 +232,7 @@ body{
     left: 0;
     right: 0;
     width: 300px;
-    
+    padding: 15px 0;
 }
 
 .con-features{
@@ -189,7 +245,7 @@ body{
     height: 251px;
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
     border-radius: 5px;
-    margin: 45px 0px;
+    margin: 55px 0px;
 }
 
 .con-features h3{
@@ -291,4 +347,268 @@ color: #505D6F;
     text-align: right;
 
     color: #505D70;
+}
+
+.testimonial{
+    position: relative;
+    height: 800px;
+    background-color: #FFFFFF;
+    
+}
+
+.con-testimonial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 340px;
+    text-align: center;
+}
+
+.con-testimonial h2{
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1px;
+    color: #20262A;
+}
+
+.ibm{
+    width: 130px;
+    margin: 15px 0;
+} 
+
+
+
+ .name-card{
+    margin: 40px 0;
+} 
+
+
+.name-con{
+    display: flex;
+    justify-content: center;
+
+}
+
+.dp{
+    display: block;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.card-text{
+    text-align: left;
+    margin-top: 5px;
+}
+
+.username{
+    font-family: 'Circular Std';
+font-style: normal;
+font-weight: 450;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height, or 111% */
+
+letter-spacing: 0.2px;
+
+/* first text */
+
+color: #20262A;
+}
+
+.user-text{
+    font-family: 'Circular Std';
+font-style: normal;
+font-weight: 450;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+letter-spacing: 0.1px;
+
+/* second text */
+
+color: #5C5C5C;
+
+}
+
+.all-testimonies{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background: #00B6F0;
+    border-radius: 35px;
+    border: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 36px;
+    width: 201px;
+}
+
+.pricing{
+    background-color: #182333;
+    height: 1200px;
+    position: relative;
+    width: auto;
+    margin: 0;
+
+    font-family: 'Circular Std';
+    font-style: normal;
+
+}
+
+.con-pricing{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 340px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.con-pricing h2{
+    font-weight: 700;
+font-size: 56px;
+line-height: 65px;
+letter-spacing: 0.2px;
+color: #FFFFFF;
+
+}
+
+.con-pricing h3{
+    width: 140px;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.p-text{
+    font-weight: 450;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.money{
+    display: flex;
+    margin: -70px auto;
+    justify-self: center;
+    text-align: center;
+    width: 140px;
+    
+}
+
+.five{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: 0.2px;
+    color: #F3CD03;
+}
+
+.money-text{
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: auto 0;
+
+
+}
+
+.p2-text{
+    font-weight: 450;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    width: 170px;
+    margin: 20px auto;
+}
+
+.info{
+    width: 100%;
+    padding: 150px 0;
+    text-align: center;
+    height: 650px;
+    background: linear-gradient(180deg, #E9FAFF 0%, rgba(233, 250, 255, 0) 100%);
+}
+
+.info h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #20262A;
+    width: 60%;
+    margin: 20px auto;   
+}
+
+.footer{
+    background: red;
+    text-align: center;
+    font-family: 'Circular Std';
+    font-style: normal;
+    width: 100%;
+   
+}
+
+.footer img{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-text{
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #5C5C5C;
+
+}
+
+.navigation-buttons  {
+    
+ 
+   
+    text-align: center;
+    width: auto;
+    background-color: greenyellow;
+}
+
+.navigation-buttons li{
+    margin: 50px 0;
+    list-style: none;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #20262A;
+
 }

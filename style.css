@@ -3,22 +3,97 @@ body{
     font-style: normal;
     margin: 0;
     /* background-color: red; */
+    
 }
+
+
 
 .intro-page{
     margin: 0 auto;
     height: 1000px;
+    width: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 7.62%, rgba(0, 225, 198, 0.06) 25.5%, #FFFFFF 70.92%);
+    position: relative;
+    overflow: hidden;
+}   
+
+nav{
+    height: 75px;
     
-} 
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+/* .logo-container{
+    margin-left: 28px;
+} */
+
+.logo-container img {
+    width: 150px;
+}
+
+.nav-list{
+    position: fixed;
+    width: 100%;
+    float: right;
+    text-align: center;
+    transition: all .5s;
+
+}
+
+.nav-list li{
+    opacity: 1;
+    line-height: 38px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-list li a{
+    color: red;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.nav-list li a.active, .nav-list li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.hambuger.btn{
+    display: block;
+    font-size: 38px;
+    color: red;
+    float: right;
+    line-height: 75px;
+    cursor: pointer;
+
+}
+
+#check{
+    display: none;
+}
+
+
+.nav-bar ul{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+
+}
 
 
 .intro-container{
     padding: 150px 0;
     margin: 0 auto;
-    position: relative;
-    height: auto;
-    max-width: 380px;
+    
+    width: 380px;
+    
     
 }
 .intro-circle{
@@ -197,6 +272,7 @@ z-index: -5;
 .features{
     position: relative;
     height: 1500px;
+    overflow: hidden;
     
 }
 
@@ -214,10 +290,10 @@ z-index: -5;
 
 .intro-circle4{
     position: absolute;
-    width: 362.46px;
-    height: 362.48px;
+    width: 462.46px;
+    height: 462.48px;
     left: 200.77px;
-    top: 700px;
+    top: 650px;
     background: #F3CD03;
 
     border-radius: 50%;
@@ -352,7 +428,8 @@ color: #505D6F;
 .testimonial{
     position: relative;
     height: 800px;
-    background-color: #FFFFFF;
+    overflow: hidden;
+   
     
 }
 
@@ -366,6 +443,35 @@ color: #505D6F;
     width: 340px;
     text-align: center;
 }
+
+.intro-circle5{
+    position: absolute;
+    width: 122.35px;
+height: 86.48px;
+left: -107.4px;
+top: 30.87px;
+background: #112D57;
+opacity: 0.63;
+border-radius: 50%;
+transform: matrix(0.6, 0.8, 0.8, -0.6, 0, 0);
+}
+
+
+
+.intro-circle6{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 150px ;
+   
+    display: inline;
+    background: #112D57 ;
+    
+    border-radius: 50%;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    z-index: -5;
+}
+
 
 .con-testimonial h2{
     font-family: 'Circular Std';
@@ -412,12 +518,7 @@ font-style: normal;
 font-weight: 450;
 font-size: 18px;
 line-height: 20px;
-/* identical to box height, or 111% */
-
 letter-spacing: 0.2px;
-
-/* first text */
-
 color: #20262A;
 }
 
@@ -427,12 +528,7 @@ font-style: normal;
 font-weight: 450;
 font-size: 18px;
 line-height: 28px;
-/* identical to box height, or 156% */
-
 letter-spacing: 0.1px;
-
-/* second text */
-
 color: #5C5C5C;
 
 }
@@ -458,7 +554,7 @@ color: #5C5C5C;
     position: relative;
     width: auto;
     margin: 0;
-
+    z-index: 100;
     font-family: 'Circular Std';
     font-style: normal;
 
@@ -569,11 +665,12 @@ color: #FFFFFF;
 }
 
 .footer{
-    background: red;
+  
     text-align: center;
     font-family: 'Circular Std';
     font-style: normal;
     width: 100%;
+    height: 600px;
    
 }
 
@@ -589,26 +686,52 @@ color: #FFFFFF;
     line-height: 28px;
     text-align: center;
     letter-spacing: 0.1px;
-    color: #5C5C5C;
-
-}
-
-.navigation-buttons  {
-    
- 
-   
-    text-align: center;
-    width: auto;
-    background-color: greenyellow;
-}
-
-.navigation-buttons li{
-    margin: 50px 0;
-    list-style: none;
-    font-weight: 450;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
     color: #20262A;
 
+}
+
+.navigation-buttons{
+    position: relative;
+}
+.navigation-buttons ul{
+    list-style: none;
+    margin: auto;
+    text-decoration: none;   
+}
+
+.navigation-buttons ul li a{
+    text-decoration: none;
+    color: #20262A;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.footer-list{
+    margin-left: -50px !important;
+}
+
+.footer-icons{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+   
+}
+
+.con-icons{
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    justify-content:center;  
+}
+
+
+
+
+
+.fa-brands{
+    letter-spacing: 20px;
 }

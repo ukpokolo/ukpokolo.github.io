@@ -674,14 +674,14 @@ color: #FFFFFF;
 
 .footer{
   
-    text-align: center;
+
     font-family: 'Circular Std';
     font-style: normal;
     width: 100%;
-    height: 600px;
+    
    
 }
-
+/* 
 .footer img{
     width: 150px;
     display: block;
@@ -743,7 +743,25 @@ color: #FFFFFF;
 .fa-brands{
     letter-spacing: 20px;
     color: #112D57;
+} */
+
+.com-footer{
+    width: 100%;
 }
+.footer-left{
+    text-align: center;
+}
+
+.footer-left img{
+    width: 150px;
+}
+
+.footer-text{
+    font-size: 18px;
+}
+
+
+
 
 @media (min-width: 680px){
 
@@ -872,7 +890,7 @@ color: #FFFFFF;
     }
     
     .intro-circle2{
-        left: 1701px;
+        left: 1301px;
     }
     
     .buttons{
@@ -884,7 +902,7 @@ color: #FFFFFF;
     
     
     .dash img{
-        width: 1580px;
+        width: 1280px;
         overflow-y: visible;
     }
     
@@ -960,13 +978,14 @@ color: #FFFFFF;
         display: flex;
         width: 1000px;
         margin: 0 auto;
-        text-align: right;
+        text-align: left;
+        
 
 
     }
 
     .con-features2 p{
-        text-align: right;
+        text-align: left;
     }
 
     .text-features1{
@@ -993,11 +1012,17 @@ color: #FFFFFF;
 
     
     
+    .intro-circle3{
+        left: 1250.77px;
+    }
     
     
     .intro-circle4{
-        left: 300.77px;
+        left: -100.77px;
+        top: 500px
     }
+
+
     
     .card-features{
         width: 400px;
@@ -1023,10 +1048,122 @@ color: #FFFFFF;
     
     
     
-    
-    
-    .intro-circle6{
-        left: 350px ;
+    .intro-circle5{
+        left: -350px ;
+        top: 200px
     }
     
+    .intro-circle6{
+        left: 600px ;
+        bottom: -300px;
+    }
+    
+    .con-info{
+        display: flex;
+        
+    }
+    .con-info h3{
+        text-align: left;
+        
+    }
+    .con-info  p{
+        text-align: left;
+        
+    }
+
+    .left-info{
+        width: 50%;
+        text-align: left !important;
+    }
+    .right-info{
+        width: 50%;
+        text-align: left;
+    }
+
+/*     
+    .con-footer{
+        display: flex;
+        width: 100%;
+        
+        margin: 0 auto;
+        flex-direction: row;
+       
+       
+    }
+    .flex{
+        background: green;
+        margin: 20px;
+    }
+
+    .footer{
+        position: relative;
+    }
+    
+    .footer img{
+        width: 100px;
+        height: 50px;
+    }
+
+
+    
+    .footer-text{
+        font-weight: 450;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #20262A;
+    
+    }
+    
+    .navigation-buttons{
+        
+        
+    }
+    .navigation-buttons ul{
+        list-style: none;
+        margin: auto;
+        text-decoration: none; 
+        display: flex;
+        
+
+    }
+    
+    .navigation-buttons ul li a{
+        margin-right: 30px;
+    }
+    
+    .footer-list{
+        margin-left: 0px !important;
+        
+    }
+    
+    .footer-icons{
+        position: relative;
+        width: auto;
+        margin-bottom: 30px;
+       
+    }
+    
+    .con-icons{
+        display: flex;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; 
+        justify-content:center;  
+    }
+    
+    
+    
+    
+    
+    .fa-brands{
+        letter-spacing: 20px;
+        color: #112D57;
+    } */
+
+
 }

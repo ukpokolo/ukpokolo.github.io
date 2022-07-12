@@ -53,12 +53,20 @@ body{
 .nav-list li a {
     text-decoration: none;
     color:#20262A;
+    
+}
+
+.nav-list li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #00B6F0;
+    transition: all 0.7s ease-in-out;
 }
 
 .login-btn{
     padding-top: 30px;
     text-align: right;
 }
+
 
 
 .login{
@@ -72,6 +80,14 @@ body{
     border-radius: 20px;
     padding: 15px 20px;
     width: 131px;
+    
+}
+
+.login:hover{
+    background-color: #00B6F0;
+    color: #FFFFFF;
+    transition: all 0.7s ease-out;
+     
 }
 
 .burger{
@@ -109,7 +125,7 @@ body{
    
      .nav-list{
         position: fixed;
-        inset: 0 0 0 70%;
+        inset: 0 0 0 60%;
         flex-direction: column;
         justify-content: right;
         padding: 5em 1em ;
@@ -119,14 +135,11 @@ body{
         transition: transform 0.5s ease-in; 
     }
 
-    .nav-list[data-visible="true"]{
-        transform: translateX(0%) ;
-    }
-
- 
 
     .nav-list li a{
         color: #FFFFFF;
+        font-size: 22px;
+        font-weight: bolder;
     }
 
     .login-btn{
@@ -162,22 +175,6 @@ body{
         position: fixed;
     }
 
-    
-    /* .mobile-nav-toggle{
-        display: block;
-        background-color: transparent;      
-        aspect-ratio: 1;
-        border: 0;
-        z-index: 9999;
-        
-    } 
-
-    .mobile-nav-toggle img{
-        width: 3rem;
-    } */ 
-
-   
-    
 } 
 
 
@@ -256,6 +253,11 @@ body{
     
 }
 
+.get-started:hover{
+    background-color: #007094;
+    transition: all 0.7s ease-in;
+}
+
 .try-for-free{
     font-weight: 700;
     font-size: 18px;
@@ -269,6 +271,10 @@ body{
     align-items: center;
     padding: 20px 36px;
 
+}
+
+.try-for-free:hover{
+    color: #00B6F0;
 }
 
 
@@ -340,6 +346,13 @@ body{
     
 }
 
+.download:hover{
+    background-color: #007094;
+    transition: all 0.7s ease-in;
+}
+
+
+
 .see-state{
     font-weight: 700;
     font-size: 18px;
@@ -353,19 +366,26 @@ body{
     align-items: center;
     padding: 20px 36px;
     width: 181px;
+    margin-top: 10px;
 
 }
+
+.see-state:hover{
+    font-weight: lighter;
+    transition:all 0.7s ease-in;
+}
+
 
 .navigate-buttons{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 20px;  
+    row-gap: 25px;  
 }
 
 .features{
     position: relative;
-    height: 1500px;
+    height: 1550px;
     overflow: hidden;
     
 }
@@ -647,6 +667,12 @@ color: #5C5C5C;
     width: 201px;
 }
 
+.all-testimonies:hover{
+    background-color: #007094;
+    transition: all 0.7s ease-out;
+}
+
+
 .pricing{
     background-color: #182333;
     height: 1200px;
@@ -880,7 +906,7 @@ color: #FFFFFF;
 
 .features{
     position: relative;
-    height: 1600px;
+    height: 1650px;
     overflow: hidden;
     
 }

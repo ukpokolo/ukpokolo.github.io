@@ -2,7 +2,6 @@ body{
     font-family: 'Circular Std';
     font-style: normal;
     margin: auto;
-    /* background-color: red; */
     overflow-x: hidden;
    
     
@@ -53,14 +52,12 @@ body{
 .nav-list li a {
     text-decoration: none;
     color:#20262A;
+    display: block;
     
 }
 
-.nav-list li a:hover{
-    text-decoration: underline;
-    text-decoration-color: #00B6F0;
-    transition: all 0.7s ease-in-out;
-}
+
+
 
 .login-btn{
     padding-top: 30px;
@@ -1166,6 +1163,62 @@ color: #FFFFFF;
     }
     .right-info{
         width: 50%;
+        text-align: left;
+    }
+
+    .pricing{
+        height: 600px;
+    }
+
+    .con-pricing{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .price-left{
+        width: 50%;
+        text-align: left !important;
+    }
+
+    .p-text{
+        line-height: 38px;
+        text-align: left;
+        width: 80%;
+    }
+
+    .price-right{
+        width: 35%;
+    }
+
+    .con-pricing h3{
+        width: auto;
+    }
+    
+ 
+    
+    .money{
+        display: flex;
+        margin: -70px 0;
+        justify-self: left;
+        text-align: left;
+        width: 140px;
+        
+    }
+    
+    .p2-text{
+        font-weight: 450;
+        font-size: 22px;
+        line-height: 38px;
+        text-align: left;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        width: auto;
+        margin: 20px 0;
+    }
+
+    .pricing .btn-price{
+        width: 100%;
         text-align: left;
     }
 

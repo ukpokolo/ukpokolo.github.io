@@ -93,7 +93,7 @@ body{
 
 
 .mt-right-image{
-    width: 343px;
+    width: 100%;
     padding-top: 70px;
 }
 
@@ -120,14 +120,14 @@ body{
 }
 
 .mb-left-image{
-    width: 343px;
+    width: 100%;
     padding-top: 30px;
     height: 480px;
     padding-bottom: 16px;
 }
 
 .mb-right-image{
-    width: 343px;
+    width: 100%;
     height: 200px;
     padding-bottom: 16px;
 }

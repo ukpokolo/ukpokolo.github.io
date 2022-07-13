@@ -74,9 +74,17 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 17px 10px 14px 12px;
+    margin: 18px 10px 14px 12px;
     color: #ffffff;  
     transform: scale(0.8,3); 
+}
+
+.main-button button:hover{
+    background-color: #D5966C;
+}
+
+.main-button button:hover ~ .arrow{
+    background-color: black;
 }
 
 .middle-section{

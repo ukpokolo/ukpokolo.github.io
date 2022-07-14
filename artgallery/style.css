@@ -11,10 +11,7 @@ body{
 
 
 
-/* .main-image img{
-    width: 100%;
-    height: 240px;
-} */
+
 
 .main-image{
     background-image: url('./images/image-hero-mobile.jpg');
@@ -211,6 +208,22 @@ body{
     height: 550px;
     background-repeat: no-repeat;
     background-size: 100% 550px;
+}
+
+/* .main-button button:hover{
+    background-color: #D5966C;
+}
+
+.main-button button:hover ~ .arrow{
+    background-color: black;
+} */
+
+.location-main .arrow:hover{
+    background-color: black;
+}
+
+.location-main .arrow:hover ~ .main-button a button{
+    background-color:  #D5966C;
 }
 
 .location-middle{

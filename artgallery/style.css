@@ -44,7 +44,7 @@ body{
     font-size: 18px;
     line-height: 28px;
     color: #444444;
-    padding: 20px 0;
+    padding: 32px 0;
 }
 
 .main-button a{
@@ -92,6 +92,33 @@ body{
     background-color: black;
 }
 
+
+@media (min-width: 760px ){
+
+    body{
+        position: relative;
+    }
+
+    .main-section{
+        height: 750px;
+        background-image: url('./images/image-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: 437px 700px;
+        
+    }
+
+    .main-image{
+        background-image: none;
+        height: 0px;
+    }
+
+    .main-text{
+        padding-top: 17%;
+        padding-left: 50%;
+    }
+
+    
+}
 
 
 .middle-section{
@@ -163,6 +190,64 @@ body{
     line-height: 28px;
 }
 
+@media (min-width: 760px ){
+    .middle-section{
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    .middle-top{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 68px;
+        padding-top: 20px;
+    }
+
+    .mt-right-image{
+        width: 398px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mt-left-text{
+        width: 243px;        
+        overflow-y: hidden;
+        margin:0px;
+        padding: 20px 0;
+    }
+
+    .middle-bottom{
+        display: flex;
+        margin: 10px 0;
+
+    }
+
+    .mb-left-image{
+        padding: 0 10px 0 0;
+        width: 100%;
+        height: 720px;
+
+    }
+
+    .mb-right-image{
+        width: 100%;
+        height: 313px;
+        padding-bottom: 10px;
+    }
+
+    .mb-right-text{
+        width: 100%;
+        padding: 80px 28px;
+    }
+
+    .mb-right-text-con{
+        width: 190px;
+    }
+
+    
+}
+
 .footer{
     margin-top: 120px;
     background-color: black;
@@ -202,6 +287,30 @@ body{
     color: #D5966C;
 }
 
+@media (min-width: 760px ){
+    .footer{
+        margin-top: 100;
+        display: flex;
+        gap: 60px;
+        padding-bottom: 50px;
+    }
+
+    .footer-left{
+        width: 120px;
+    }
+
+    .footer-middle{
+        width: 281px;
+    }
+
+    .footer-right {
+        margin: 0;
+        padding-left: 70px;
+
+    }
+
+}
+
 /* Our Location Page */
 .location-main{
     background-image: url('./images/image-map-mobile.png');
@@ -210,13 +319,6 @@ body{
     background-size: 100% 550px;
 }
 
-/* .main-button button:hover{
-    background-color: #D5966C;
-}
-
-.main-button button:hover ~ .arrow{
-    background-color: black;
-} */
 
 .location-main .arrow:hover{
     background-color: black;

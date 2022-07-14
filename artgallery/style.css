@@ -20,7 +20,7 @@ body{
     background-image: url('./images/image-hero-mobile.jpg');
     height: 240px;
     background-repeat: no-repeat;
-    background-size: 375px 240px;
+    background-size: 100% 240px;
 }
 
 .main-text{
@@ -210,7 +210,7 @@ body{
     background-image: url('./images/image-map-mobile.png');
     height: 550px;
     background-repeat: no-repeat;
-    background-size: 375px 550px;
+    background-size: 100% 550px;
 }
 
 .location-middle{

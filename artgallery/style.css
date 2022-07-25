@@ -13,11 +13,13 @@ body{
 
 
 
-.main-image{
-    background-image: url('./images/image-hero-mobile.jpg');
-    height: 240px;
-    background-repeat: no-repeat;
-    background-size: 100% 240px;
+.main-image img{
+    width: 100%;
+}
+
+.main-image .desktop{
+    display: none;
+    
 }
 
 .main-text{
@@ -95,28 +97,74 @@ body{
 
 @media (min-width: 760px ){
 
-    body{
-        position: relative;
-    }
-
-    .main-section{
+  
+    /* .main-section{
         height: 750px;
         background-image: url('./images/image-hero.jpg');
         background-repeat: no-repeat;
         background-size: 437px 700px;
         
+
+        
+    } */
+
+    .main-section{
+        position: relative;
+        overflow-y: hidden;
+    }
+
+
+    .main-image .mobile{
+        display: none;
+    }
+
+    .main-image .desktop{
+        display: block;
+        width: 60%;
+        height: 750px;
+    }
+
+    
+
+    .main-text{
+        position: absolute;
+        top: 145px;
+        bottom: 0;
+        left: 398px;
+        right: 0;
+        /* padding-top: 17%;
+        padding-left: 50%; */
+    }
+
+    
+}
+
+@media (min-width: 1020px){
+    .main-section{
+        height: 800px;
+    }
+
+    .background{
+        display: flex;
+        border: 3px solid green;
+        height: 800px;
+    }
+
+
+    .black{
+        width: 30%;
+        height: 800px;
+        background-color: black;
     }
 
     .main-image{
-        background-image: none;
-        height: 0px;
+        width: 30%;
     }
 
-    .main-text{
-        padding-top: 17%;
-        padding-left: 50%;
+    .main-image .desktop{
+        width: 100%;
+        height: 800px;
     }
-
     
 }
 
@@ -305,7 +353,7 @@ body{
 
     .footer-right {
         margin: 0;
-        padding-left: 70px;
+        padding-left: 10%;
 
     }
 
@@ -313,10 +361,9 @@ body{
 
 /* Our Location Page */
 .location-main{
-    background-image: url('./images/image-map-mobile.png');
-    height: 550px;
-    background-repeat: no-repeat;
-    background-size: 100% 550px;
+    background-image: url('./images/image-map-tablet.png');
+    height: 600px;
+    background-size: 100% 600px;
 }
 
 
@@ -385,6 +432,34 @@ body{
     color: #FFFFFF;
 }
 
+@media (min-width:760px){
+    .location-middle{
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+    }
+    
+    .lm-left{
+        margin: 0 ;
+        width: 100%;
+        padding-right: 10%;
+    }
+
+    .lm-left br{
+        display: inline;
+    }
+
+    .lm-right{
+        margin: 0;
+        padding-right: 5%;
+    }
+
+
+
+
+}
+
 .location-footer{
     background-color: #D5966C;
     padding: 48px 24px;
@@ -393,4 +468,31 @@ body{
 
 .location-footer .footer-right i:hover{
     color: white;
+}
+
+@media (min-width: 760px ){
+    .location-footer{
+        margin-top: 100;
+        display: flex;
+        gap: 60px;
+        padding-bottom: 50px;
+    }
+
+    .location-footer > *{
+        flex-basis: 100%;
+    }
+
+    /* .footer-left{
+        width: 120px;
+    }
+
+    .footer-middle{
+        width: 281px;
+    } */
+
+    .footer-right {
+        margin: 0;
+
+    }
+
 }

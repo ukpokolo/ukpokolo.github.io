@@ -177,8 +177,7 @@ body{
 
 .intro-container{
     padding: 150px 0;
-    margin: 0 auto;
-    
+    margin: -70px auto 0 auto;
     width: 380px;
     
     
@@ -290,7 +289,7 @@ body{
 
 .navigate{
     position: relative;
-    height: 700px;
+    height: 450px;
     background: #FFFFFF;
 
 }
@@ -300,6 +299,7 @@ body{
     width: 350px;
     position: absolute;
     display: block;
+    margin-top: -200px !important;
     margin: 0 auto;
     top: 0;
     bottom: 0;
@@ -462,7 +462,7 @@ body{
 .task{
     position: relative;
     text-align: center;
-    height: 800px;
+    height: 500px;
 }
 
 .con-task{
@@ -672,10 +672,11 @@ color: #5C5C5C;
 
 .pricing{
     background-color: #182333;
-    height: 1200px;
+    height: 1000px;
     position: relative;
     width: auto;
     margin: 0;
+    margin-top: -100px;
     z-index: 100;
     font-family: 'Circular Std';
     font-style: normal;
@@ -691,7 +692,7 @@ color: #5C5C5C;
     margin: 0 auto;
     width: 340px;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .con-pricing h2{
@@ -767,7 +768,7 @@ color: #FFFFFF;
 
 .info{
     width: 100%;
-    padding: 150px 0;
+    padding: 30px 0;
     text-align: center;
     height: 650px;
     background: linear-gradient(180deg, #E9FAFF 0%, rgba(233, 250, 255, 0) 100%);
@@ -792,7 +793,6 @@ color: #FFFFFF;
     font-family: 'Circular Std';
     font-style: normal;
     width: 100%;
-    
    
 }
 
@@ -847,7 +847,9 @@ color: #FFFFFF;
 @media (min-width: 680px){
 
 .intro-page{
-    height: 1500px;
+    height: 1200px;
+    margin-bottom: 100px;
+    
 }
 .intro-container{
     width: 480px;   
@@ -875,7 +877,7 @@ color: #FFFFFF;
 
 .navigate{
     position: relative;
-    height: 700px;
+    height: 400px;
     background: #FFFFFF;
 
 }
@@ -949,6 +951,10 @@ color: #FFFFFF;
     left: 350px ;
 }
 
+.footer{
+    margin-top: -180px;
+   
+}
 
 
 
@@ -960,7 +966,7 @@ color: #FFFFFF;
     .intro-page{
         overflow-y: visible;
         background: linear-gradient(180deg, #FFFFFF 5.92%, #C3F8F2 40%, #FFFFFF 10% );
-        height: 2000px;
+        height: 1700px;
     }
     .intro-container{
         width: 480px; 
@@ -989,7 +995,7 @@ color: #FFFFFF;
     
     .navigate{
         position: relative;
-        height: 700px;
+        height: 350px;
         background: #FFFFFF;
     
     }
@@ -1037,6 +1043,7 @@ color: #FFFFFF;
         right: 0;
         bottom: 0;
         margin: 0 auto;
+
         width: 100% !important;
 
     }
@@ -1220,6 +1227,11 @@ color: #FFFFFF;
     .pricing .btn-price{
         width: 100%;
         text-align: left;
+    }
+    
+    .footer{
+        margin-top: 0;
+       
     }
 
 

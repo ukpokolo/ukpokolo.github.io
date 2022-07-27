@@ -295,6 +295,9 @@ main > *{
     margin-bottom: 2rem;
 }
 
+.pricing-left img{
+    background-color: #F4F3EE;
+}
 .pricing-right > *{
     margin-bottom: 1.5rem;
 }

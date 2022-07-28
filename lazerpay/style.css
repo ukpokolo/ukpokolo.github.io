@@ -255,6 +255,18 @@ main > *{
     padding-top: 0.4rem;
 }
 
+@media (min-width:768px){
+    .intro> *{
+        margin:0 auto;
+        max-width: 55%;
+
+
+    }
+
+    
+}
+
+
 /* Growth section */
 
 .growth{
@@ -283,6 +295,34 @@ main > *{
 
 .growth-card h4{
     color: #EF6B4D;
+}
+
+@media (min-width:768px){
+    .growth h3{
+        width: 60%;
+    }
+
+    .growth-card-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .growth-card-container > * {
+        flex: 1 1 10rem;
+    }
+
+    .growth-card{
+        min-width: 15rem;
+    }
+
+    .growth h1{
+        width: 35rem;
+    }
+
+    .growth-card h3{
+        width: 15rem;
+}
 }
 
 .pricing{
@@ -326,6 +366,17 @@ main > *{
     padding-top: 0.07rem;
     
 
+}
+
+@media (min-width:768px){
+    .pricing-left img{
+       width: 40rem;
+       background-color:#F8FAFC;
+    }
+    .pricing-right > *{
+        max-width: 30rem;
+    }
+    
 }
 
 .for-developers{

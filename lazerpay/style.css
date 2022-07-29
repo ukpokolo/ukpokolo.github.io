@@ -13,7 +13,6 @@
 html,
 body{
     height: 100%;
-    
 }
 
 h1{
@@ -71,15 +70,18 @@ img{
     font-family: 'Roboto', sans-serif;
     height:4.3rem ;
     z-index: 999;
+    font-size: 0.7rem;
+    
 }
 
 
 .nav-container{
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 4rem;
     display: flex;
     position: fixed;
     width: 100%;
     background-color: #fff;
+
     
     
 }
@@ -91,7 +93,7 @@ img{
 
 
 .nav-container img{
-    width: 9rem;
+    width: 6rem;
     margin: 0;
 
 }
@@ -99,21 +101,21 @@ img{
 .nav-list{
     list-style: none;
     display: flex;
-    gap: 3rem;
-    justify-content: space-between;    
+    gap: 3rem;   
     padding-top: 0.3rem;
-    width: 35rem;
     margin-left: 2rem;
+    border: 1px solid blue;
+    width: max-content;
 }
 
-.nav-list ul li{
-    width: 2rem;
+.nav-list ul li {
+    width: 1rem;
 }
 .nav-list a{
     text-decoration: none ;
     color: #000;
     font-weight:550;
-    
+    border: 1px solid red;
 }
 
 .ph-btn{
@@ -163,7 +165,8 @@ img{
 main{
     z-index: -999;
     position: relative;
-    margin-top: -0.2rem;
+    margin-top: -0.8rem;
+    
 }
 
 main > *{
@@ -175,11 +178,6 @@ main > *{
     padding-top: 1rem;
 
 }
-
-
-
-
-
 
 .new{
     margin-bottom: 2rem;
@@ -201,6 +199,8 @@ main > *{
 
 .intro-left> *{
     margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .il-btn{
@@ -516,8 +516,8 @@ main > *{
 
 @media(min-width: 1020px){
     .for-developers{
-        margin-left: 4rem;
-        margin-right: 4rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
 
     .fd-top{
@@ -599,7 +599,7 @@ main > *{
 @media (min-width:1020px){
     .get-started{
         display: flex;
-        margin: 2rem 4rem 0 4rem;
+        margin: 2rem 6rem 0 6rem;
     }
 
     .gt-left{
@@ -775,7 +775,7 @@ footer h3{
     }
     
     footer > *{
-        margin: 0 4rem 0 4rem;
+        margin: 0 6rem 0 6rem;
     }
 
     .footer-middle{

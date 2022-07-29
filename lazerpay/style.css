@@ -13,13 +13,14 @@
 html,
 body{
     height: 100%;
+    
 }
 
 h1{
     
     font-family: 'Roboto', sans-serif;
     font-size: 2.3rem;
-    font-weight: 900;
+    font-weight: 999;
 }
 
 h2{
@@ -167,15 +168,18 @@ main{
 
 main > *{
     padding: 0rem 1rem;
-
-    
 }
 
 .intro{
     background-color: #F4F3EE;
     padding-top: 1rem;
-    
+
 }
+
+
+
+
+
 
 .new{
     margin-bottom: 2rem;
@@ -240,30 +244,80 @@ main > *{
 
 .intro-logo-container{
     display: flex;
+    gap: 0.4rem;
+    
     
 }
+
+
+.intro-logo img{
+    width: 6rem;
+
+} 
+
 
 .payday{
     margin-left: -0.5rem;
 }
 
-.betdemand{
-    padding-top: 0.2rem;
+.betdemand img {
+    padding-top: 0.4rem;
+    width: 9rem ;
 }
 
 .brace{
     padding-top: 0.4rem;
 }
 
+.intro-right{
+    padding-bottom: 1rem;
+}
 @media (min-width:768px){
-    .intro> *{
+    .intro-left {
         margin:0 auto;
         max-width: 55%;
 
 
     }
 
+    .intro{
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .intro-right {
+        width: 100%;
+    }
+
+    .intro-logo-container{
+        display: flex;
+        
+        
+    }
+
+
+
     
+}
+
+@media (min-width:1020px){
+    .intro{
+        display: flex;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .intro-right{
+        text-align: center;
+    }
+
+    .intro-right img{
+        width: 32rem;
+    }
+
+    .intro-left{
+        padding-top: 3rem;
+    }
 }
 
 
@@ -298,14 +352,14 @@ main > *{
 }
 
 @media (min-width:768px){
-    .growth h3{
+    .growth-heading h3{
         width: 60%;
     }
 
     .growth-card-container{
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        justify-content: space-around;
     }
 
     .growth-card-container > * {
@@ -313,17 +367,38 @@ main > *{
     }
 
     .growth-card{
-        min-width: 15rem;
+        min-width: 16rem;
     }
 
     .growth h1{
-        width: 35rem;
+        max-width: 35rem;
     }
 
     .growth-card h3{
         width: 15rem;
 }
 }
+
+@media (min-width:1020px){
+    .growth-heading h3{
+        width: 32%;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .growth-card-container{
+        max-width: 52rem;
+    }
+
+    .growth h1{
+       max-width: 60rem;
+    }
+
+    
+}
+
 
 .pricing{
     background-color: #F8FAFC;
@@ -340,6 +415,7 @@ main > *{
 }
 .pricing-right > *{
     margin-bottom: 1.5rem;
+    
 }
 
 .view-pricing-btn{
@@ -374,15 +450,36 @@ main > *{
        background-color:#F8FAFC;
     }
     .pricing-right > *{
-        max-width: 30rem;
+        max-width: 27rem;
     }
     
 }
 
-.for-developers{
-    
+@media (min-width: 1020px){
+    .pricing{
+        display: flex;
+        width: 80rem;
+        margin: 0 auto;
+    }
+
+    .pricing > *{
+        margin: 0 auto;
+    }
+
+    .pricing-right {
+        align-self: center;
+        
+    }
+
+    .pricing-right h2{
+        font-size: 2rem;
+    }
+
 
 }
+
+/* for developers section */
+
 .fd-top > *{
     padding-bottom: 1rem;
 }
@@ -402,6 +499,42 @@ main > *{
     width: 4rem;
     
 }
+
+@media(min-width: 768px){
+    .fd-top h2{
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    .fdb-card-container{
+        display: flex;
+        gap: 1rem;
+    }
+
+    
+}
+
+@media(min-width: 1020px){
+    .for-developers{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .fd-top{
+        margin: 10rem 0 3rem 0;
+    }
+
+    .fdb-card{
+        width: 100%;
+    }
+
+    .fdb-card > *{
+        width: 30rem;
+    }
+
+    
+}
+
 
 /* Get started section */
 .get-started{
@@ -451,6 +584,45 @@ main > *{
     background-color: #FCF7EF;
 }
 
+@media (min-width: 768px){
+    .gt-left{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .gtr-card-container{
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+@media (min-width:1020px){
+    .get-started{
+        display: flex;
+        margin: 2rem 4rem 0 4rem;
+    }
+
+    .gt-left{
+        min-width: 50%;
+        align-self: center;
+    }
+
+    .gt-left > *{
+        width: 25rem;
+    }
+
+    .gt-left h2{
+        font-size: 2.2rem;
+    }
+
+    .gt-left h3{
+        font-size: 1rem;
+    }
+
+    .gt-btn > *{
+        font-size: 1rem;
+    }
+}
 /* footer section */
 
 footer{
@@ -553,5 +725,85 @@ footer h3{
     padding-bottom: 2rem;
 }
 
+@media (min-width: 768px){
+    footer{
+        display: grid;
+        grid-template-columns: 50% auto auto;
+        grid-template-rows: 15% auto auto;
+        gap: 1rem;
+        
+    }
+
+    .footer-top{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        
+
+    }
+
+    .footer-top > *{
+        line-height: 1.5rem;
+    }
+
+    .footer-middle{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end:3;
+        
+    }
+
+    .footer-bottom{
+        grid-row-start:2;
+        grid-row-end:3;
+        
+    }
+
+    .footer-bottom > *{
+        line-height: 1.5rem;
+    }
+
+    .footer-list{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1020px){
+    footer{
+        grid-template-columns: 30% auto auto;
+        grid-template-rows: 25% auto auto;
+    }
+    
+    footer > *{
+        margin: 0 4rem 0 4rem;
+    }
+
+    .footer-middle{
+        display: flex;
+        flex-wrap:wrap;     
+        
+    }
+
+    .footer-middle > * {
+        flex-basis: 50%;
+    }
+
+    .footer-list li{
+        width: 12rem;
+    }
+
+    .footer-list-bottom{
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .footer-top{
+        
+    }
+
+    .footer-bottom{
+        
+    }
 
 
+}

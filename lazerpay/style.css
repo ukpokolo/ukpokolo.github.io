@@ -66,7 +66,9 @@ img{
 /* Nav bar */
 .primary-header{
    
-    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
     height:4.3rem ;
     z-index: 999;
@@ -79,16 +81,16 @@ img{
     padding: 1.2rem 4rem;
     display: flex;
     position: fixed;
-    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    justify-content: center;
     background-color: #fff;
+
 
     
     
 }
 
-/* .nav-container > *{
-    flex-basis: 100%;
-} */
 
 
 
@@ -101,10 +103,9 @@ img{
 .nav-list{
     list-style: none;
     display: flex;
-    gap: 3rem;   
+    gap: 1rem;   
     padding-top: 0.3rem;
     margin-left: 2rem;
-    border: 1px solid blue;
     width: max-content;
 }
 
@@ -114,8 +115,7 @@ img{
 .nav-list a{
     text-decoration: none ;
     color: #000;
-    font-weight:550;
-    border: 1px solid red;
+    font-weight:400;
 }
 
 .ph-btn{
@@ -147,9 +147,23 @@ img{
     display: none;
 }
 
+.burger div{
+    width: 20px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px;
+
+}
+
 @media screen and (max-width: 768px) {
     .nav-list{
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        padding-top: 8vh;
+        background-color: white;
         display: none;
+
     }
 
     .nav-container{
@@ -282,7 +296,13 @@ main > *{
 
     .intro{
         margin: 0 auto;
-        justify-content: center;
+        justify-self: center;
+       
+        
+    }
+
+    .intro > *{
+        margin: 0 auto;
     }
 
     .intro-right {
@@ -305,6 +325,10 @@ main > *{
         display: flex;
         margin-left: 4rem;
         margin-right: 4rem;
+        max-width: 80rem;
+        border: 1px solid red;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .intro-right{
@@ -518,6 +542,9 @@ main > *{
     .for-developers{
         margin-left: 6rem;
         margin-right: 6rem;
+        max-width: 80rem;
+        margin: 0 auto;
+        justify-content: center;
     }
 
     .fd-top{
@@ -534,6 +561,84 @@ main > *{
 
     
 }
+
+/* Users Section */
+.users-text h2{
+    font-size: 2rem;
+    padding-bottom: 1rem;   
+}
+
+.users{
+    background-color: #F8FAFC;
+}
+
+.users > *{
+    text-align: center;
+    width: 18rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.users-card{
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+
+.uc-image{
+    padding-bottom: 1rem;
+}
+
+.uc-image img{
+    margin: 0;
+}
+
+.uc-text > *{
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.uc-btn{
+    margin-top: 1rem;
+}
+
+.uc-btn button{
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+@media (min-width:768px){
+    .users-slider{
+        display: flex;
+        min-width: 100%;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 1rem;
+        
+    }
+
+    .users-card{
+        min-width: 18rem;
+
+    }
+
+    .users-slider::-webkit-scrollbar {
+        display: none;
+      }
+}
+
+
+
+
+
+
 
 
 /* Get started section */
@@ -600,15 +705,21 @@ main > *{
     .get-started{
         display: flex;
         margin: 2rem 6rem 0 6rem;
+        max-width: 80rem;
+        margin: 0 auto;
+        justify-content: center;
     }
 
     .gt-left{
         min-width: 50%;
         align-self: center;
+        margin-left: 0;
+        margin-right: auto;
     }
 
     .gt-left > *{
         width: 25rem;
+
     }
 
     .gt-left h2{
@@ -621,6 +732,15 @@ main > *{
 
     .gt-btn > *{
         font-size: 1rem;
+    }
+
+    .gtr-card{
+        width: 13rem;
+        padding: 1rem;
+    }
+
+    .gtr-card h3{
+        font-size: 0.6rem;
     }
 }
 /* footer section */
@@ -772,10 +892,14 @@ footer h3{
     footer{
         grid-template-columns: 30% auto auto;
         grid-template-rows: 25% auto auto;
+        
     }
     
     footer > *{
         margin: 0 6rem 0 6rem;
+        max-width: 80rem;
+        margin: 0 auto;
+        justify-content: center;
     }
 
     .footer-middle{

@@ -193,6 +193,10 @@ main > *{
 
 }
 
+.intro h4{
+    font-size: 0.53rem;
+}
+
 .new{
     margin-bottom: 2rem;
     padding-top: 1rem;
@@ -621,6 +625,7 @@ main > *{
         overflow-x: auto;
         scroll-behavior: smooth;
         gap: 1rem;
+
         
     }
 

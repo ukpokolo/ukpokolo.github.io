@@ -83,6 +83,8 @@ img{
 
 }
 
+
+
 .nav-list{
     list-style: none;
     display: flex;
@@ -98,12 +100,12 @@ img{
 
 .nav-list ul li {
     width: 1rem;
-    
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-list ul li a{
     position: relative;
+    
     
     
 }
@@ -128,6 +130,8 @@ img{
 .dropdown-header{
     border-bottom: 1px solid #63738A;
     padding-bottom: 1rem;
+    font-weight: 700;
+    color: #3B485B;
 }
 
 .dropdown ul{
@@ -142,6 +146,14 @@ img{
     display: flex;
 }
 
+.dropdown-top h3{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.dropdown h4{
+    padding-top: 5px;
+}
 .dropdown-top > *{
     border: none;
     
@@ -317,6 +329,13 @@ img{
      }
 }
 
+@media screen and (max-width: 490px) {
+    .dropdown ul li{
+        width: 7rem;
+        margin-right: 2rem;
+        flex: 0 0 35%;
+    }
+}
 
 
 /* Intro Section */

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+/* Nav Bar */
+
+nav{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    position: fixed;
+    width: 100%;    
+}
+
+.nav-container{
+    display: flex;
+    background-color: #fff;
+    gap: 3rem;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family:'DM Sans', sans-serif;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+
+.nav-logo img{
+    width: 170px;
+    height: 40px;
+    padding-top: 9px;
+}
+
+.nav-link-container{
+    width: 100%;
+} 
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-link li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-btn{
+    justify-self: right;
+    display: flex;
+    margin: 0 0 0 auto;
+    gap: 0.5rem;
+}
+
+button{
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+}
+
+.primary-btn{
+    background-color: #0C1825;
+    color: #fff;
+}
+
+.secondary-btn{
+    background-color: #fff;
+    border: 1px solid #DBDBDC;
+}
+
+.burger{
+    display: none;
+}
+
+
+.burger div{
+    width: 25px;
+    height: 2.5px;
+    background-color: #000;
+    margin: 5px;
+}
+
+@media (max-width:970px){
+    .nav-link-container{
+        background-color: #fff;
+    }
+
+
+    .nav-link{
+        position: absolute;
+        right: 0;
+        top: 4.8rem;
+        display: flex;
+        flex-direction: column;
+        padding-top: 8rem;
+        transform: translateX(100%);
+    }
+
+    .nav-btn{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+        gap: 2rem;
+    }    
+
+    .burger{
+        display: block;
+        padding-top: 10px;
+    }
+
+    .nav-active{
+        transform: translateX(0);
+    }
+
+    
+    .toggle .line1{
+        transform: rotate(45deg) translate(6px,5px);
+        transition: transform 0.3s ease;
+        transition-delay: 0.4s;
+    } 
+     .toggle .line2{
+        width: 0;
+        margin: 0 auto;
+        transition: width 0.3s ease;
+    }
+    .toggle .line3{
+        transform: rotate(135deg) translate(-6px,5px);
+        transition: transform 0.3s ease;
+        transition-delay: 0.4s;
+    } 
+}
+
+
+

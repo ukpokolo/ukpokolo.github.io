@@ -1,0 +1,54 @@
+
+body{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+*{
+    margin: 0 auto;
+}
+
+hr{
+    width: 650px;
+}
+
+.big-image img{
+    width: 900px;
+    padding-top: 50px;
+}
+
+h3{
+    padding-top: 20px;
+    font-size: 54px;
+    width: 800px;
+    
+}
+
+h5{
+    font-size: 20px;
+    padding-top: 20px; 
+    padding-bottom: 30px;  
+    width: 650px; 
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    flex: 1 1 50%;
+    margin-bottom: 30px;
+
+}
+.box img{
+    width: 280px;
+}
+
+h4{
+    font-size: 22px;
+    width:260px;
+    padding-top: 10px;
+}

@@ -133,9 +133,9 @@ button{
         transform: translateX(0);
     }
 
-    .fixed{
+    /* .fixed{
         position: fixed;
-    }
+    } */
 
     
     .toggle .line1{

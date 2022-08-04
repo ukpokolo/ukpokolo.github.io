@@ -101,6 +101,7 @@ button{
 @media (max-width:970px){
     .nav-link-container{
         background-color: #fff;
+        border: 1px solid red;
     }
 
 
@@ -113,6 +114,8 @@ button{
         padding-top: 8rem;
         transform: translateX(100%);
         background-color: #fff;
+        border: 1px solid blue;
+
 
     }
 
@@ -121,6 +124,7 @@ button{
         width: 100%;
         padding: 0 2rem;
         gap: 2rem;
+        border: 1px solid green;
     }    
 
     .burger{

@@ -50,6 +50,8 @@ nav{
 
 .nav-link-container{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 } 
 .nav-link{
     list-style: none;
@@ -57,6 +59,7 @@ nav{
     gap: 3rem;
     align-items: center;
     width: 100%;
+    border: 1px solid red;
 }
 
 .nav-link li a{
@@ -69,6 +72,9 @@ nav{
     display: flex;
     margin: 0 0 0 auto;
     gap: 0.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    border: 1px solid blue;
 }
 
 button{
@@ -101,15 +107,14 @@ button{
 
 @media (max-width:970px){
     .nav-link-container{
-
         background-color: #fff;
-    border: 1px solid red;
-    position: absolute;
-    height: calc(100vh - 77px);
-    /* display: none; */
-    left: 0;
-    right: 0;
-    bottom: -92vh;
+        border: 1px solid red;
+        position: absolute;
+        height: calc(100vh - 77px);
+        left: 0;
+        right: 0;
+        bottom: -90vh;
+        flex-direction: column;
     }
 
 

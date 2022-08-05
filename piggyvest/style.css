@@ -37,7 +37,6 @@ nav{
     padding: 1rem;
     font-family:'DM Sans', sans-serif;
     font-weight: bold;
-    justify-content: space-between;
     position: relative;
 }
 
@@ -51,7 +50,6 @@ nav{
 .nav-link-container{
     width: 100%;
     display: flex;
-    justify-content: space-between;
 } 
 .nav-link{
     list-style: none;
@@ -59,7 +57,6 @@ nav{
     gap: 3rem;
     align-items: center;
     width: 100%;
-    border: 1px solid red;
 }
 
 .nav-link li a{
@@ -74,7 +71,6 @@ nav{
     gap: 0.5rem;
     width: 100%;
     justify-content: flex-end;
-    border: 1px solid blue;
 }
 
 button{
@@ -106,17 +102,46 @@ button{
 }
 
 @media (max-width:970px){
+
+    .nav-logo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    .nav-container{
+        flex-direction: column;
+        height: 100vh;
+    } 
+
     .nav-link-container{
+        flex-direction: column;
+        transform: translateX(120%);
+    }
+
+    .nav-link{
+        flex-direction: column;
+    }
+
+    .nav-btn{
+        flex-direction: column;
+    }
+
+    .nav-btn > * {
+        margin-top: 2rem;
+    }
+    /* .nav-link-container{
         background-color: #fff;
         border: 1px solid red;
         position: absolute;
         height: calc(100vh - 77px);
         left: 0;
         right: 0;
-        bottom: -90vh;
+        bottom: -vh;
         flex-direction: column;
         
-        transform: translateX(100%);
+        
     }
 
 
@@ -135,7 +160,7 @@ button{
         padding: 0 2rem;
         gap: 2rem;
         border: 1px solid green;
-    }    
+    }     */
 
     .burger{
         display: block;

@@ -26,6 +26,7 @@ nav{
     position: fixed;
     width: 100%;    
     z-index: 999;
+    background-color: #fff;
 }
 
 .nav-container{
@@ -112,12 +113,12 @@ button{
 
     .nav-container{
         flex-direction: column;
-        height: 100vh;
     } 
 
     .nav-link-container{
         flex-direction: column;
-        transform: translateX(120%);
+        display: none;
+
     }
 
     .nav-link{
@@ -131,37 +132,8 @@ button{
     .nav-btn > * {
         margin-top: 2rem;
     }
-    
-    /* .nav-link-container{
-        background-color: #fff;
-        border: 1px solid red;
-        position: absolute;
-        height: calc(100vh - 77px);
-        left: 0;
-        right: 0;
-        bottom: -vh;
-        flex-direction: column;
-        
-        
-    }
 
-
-    .nav-link{
-        display: flex;
-        flex-direction: column;
-        padding-top: 8rem;
-        background-color: #fff;
-        border: 1px solid blue;
-
-    }
-
-    .nav-btn{
-        flex-direction: column;
-        width: 100%;
-        padding: 0 2rem;
-        gap: 2rem;
-        border: 1px solid green;
-    }     */
+   
 
     .burger{
         display: block;
@@ -169,12 +141,13 @@ button{
     }
 
     .nav-active{
-        transform: translateX(0);
+       display: block;
+       height: calc(100vh - 77px);
     }
 
-    /* .fixed{
+     .fixed{
         position: fixed;
-    } */
+    } 
 
     
     .toggle .line1{
@@ -194,5 +167,61 @@ button{
     } 
 }
 
+.intro-right{
+    margin: 0 auto;
+    position: relative;
+    margin: 2rem;
+    justify-content: center;
+    height: 620px;
+    width: 300px;
+}
 
+.intro-right > *{
+    position: absolute;
+}
+
+.intro-girl{
+    width: 309px;
+    height: 500px;
+    z-index: 0;
+}
+
+.investify{
+    width: 215px;
+    height: 116px;
+    bottom: 8rem;
+    right: -1rem;
+}
+
+.my-rent{
+    width: 215px;
+    height: 116px;
+    top: 8.5rem;
+    left: -2.5rem;
+}
+
+.intro-cross{
+    top: -2.5rem;
+    left: -2rem;
+    z-index: 2;
+}
+
+.intro-box{
+    width: 300px;
+    height: 572px;
+    top: -2rem;
+    left: 2rem;
+    z-index: -1;
+}
+
+.intro-circle{
+    right: -1.5rem;
+    top: 8rem;
+}
+
+.intro-dot{
+    bottom: 12rem;
+    left: -1rem;
+    z-index: 1;
+}
 

@@ -15,3 +15,6 @@ const navSlide =() => {
 }
 
 navSlide();
+
+var height = document.querySelector('.nav-container').offsetHeight;
+alert(height);

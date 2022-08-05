@@ -101,11 +101,15 @@ button{
 
 @media (max-width:970px){
     .nav-link-container{
+
         background-color: #fff;
-        border: 1px solid red;
-        position: absolute;
-        bottom: -100%;
-        height: calc(100vh - 77px);
+    border: 1px solid red;
+    position: absolute;
+    height: calc(100vh - 77px);
+    /* display: none; */
+    left: 0;
+    right: 0;
+    bottom: -92vh;
     }
 
 

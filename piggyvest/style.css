@@ -479,3 +479,56 @@ button{
 .crunch{
     width: 170px;
 }
+
+/* Footer */
+
+footer{
+    padding: 2rem;
+    font-size: 12.5px;
+}
+
+.footer-top{
+    padding-bottom: 3rem;
+}
+
+.footer-logo{
+    width: 160px;
+    height: 43px;
+}
+
+
+.footer-top ul{
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.footer-top  ul > *{
+    margin-bottom: 1rem;
+}
+
+.products-and-company{
+    display: flex;
+    gap: 5rem;
+}
+
+.footer-far-right{
+    padding-top: 1rem;
+}
+
+.footer-far-right > *{
+    margin-bottom: 1rem;
+}
+
+.footer-social{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-bottom{
+    text-align: center;
+}
+
+
+.blue{
+    color: #0d60d8;
+}

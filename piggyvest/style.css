@@ -194,11 +194,13 @@ button{
 /* Intro section */
 .intro-section{
     padding-top: 10rem ;
+    
 }
 
 .intro-left{
     text-align: center;
     padding:2rem;
+    margin: 0 auto;
 }
 
 .intro-left > *{
@@ -224,7 +226,7 @@ button{
 
 .intro-get-on-btn button img{
     position: absolute;
-    left: 1rem;
+    left:1rem;
     
 }
 .intro-right{
@@ -285,6 +287,43 @@ button{
     z-index: 1;
 }
 
+@media (min-width: 768px){
+    .intro-left {
+        width: 500px;
+    }
+
+    .intro-get-on-btn {
+        flex-direction: row;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 995px){
+    .intro-section{
+        display: flex;
+        margin: 0 auto;
+    }
+
+   
+
+   
+
+    .intro-left{
+        text-align: left;    
+    }
+
+    
+
+    
+
+    .intro-get-on-btn{
+        margin: 0;
+    }
+
+    
+}
+
 /* Security Section */
 
 .security{
@@ -318,6 +357,8 @@ button{
     
 }
 
+/* Build Savings */
+
 .build-savings-section{
     text-align: center;
     padding: 1rem;
@@ -338,6 +379,7 @@ button{
     padding: 2rem;
     background-color: #f9f9f9;
     margin-bottom: 3rem;
+    border-radius: 20px;
 }
 
 .bsr-card > *{
@@ -356,6 +398,28 @@ button{
     padding-top: 0.3rem;
 }
 
+@media (min-width: 768px){
+    .build-savings-left{
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    h2{
+        font-size: 33px;
+    }
+
+    .bsr-card-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    .bsr-card{
+        width: 350px;
+    }
+}
+
 /* Investment Section */
 
 .investment-section{
@@ -367,7 +431,11 @@ button{
     max-width: 256px;
 }
 
-.investment-left{
+
+
+.investment-left-container{
+    width: 368px;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -390,7 +458,7 @@ button{
     color: #793FEA;
     background-color: #F7F0FF;
     border-radius: 2rem;
-    width:fit-content;
+    width:fit-content !important;
     margin: 0 auto;
     padding: 0.5rem 1rem;
     margin-top: 3rem;
@@ -399,6 +467,28 @@ button{
     color: #793FEA;
     position: relative;
 }
+
+@media (min-width:768px){
+    .investment-dot{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .investment-dot circle{
+        fill:#E7439C;
+    }
+
+    .investment-right {
+        margin-top: 5rem;
+    }
+
+    .investment-right > * {
+        width: 530px;
+        margin: 0 auto;
+    }
+}
+
 
 
 /* Saver of the month section*/
@@ -431,9 +521,58 @@ button{
     object-fit: cover;
 }
 
+@media (min-width:720px){
+    .som-left > *{
+        width: 460px;
+        margin: 0 auto;
+    }
+}
+
+/* Customers */
 .customers{
     padding: 1.5rem;
     margin-top: 4rem;
+    
+}
+
+.carousel-container{
+    margin: 5rem auto;
+    height: 21.5rem;
+    overflow-y: hidden;
+}
+
+
+
+.carousel{
+    padding: 1rem 0.5rem ;
+    background-color: #f9f9f9;
+    margin-top: 0.5rem;
+    display: flex;
+    font-size: 12px;
+    gap: 1rem;
+    animation: animate 5s infinite linear;
+    animation-delay: calc(1s * var(--delay));
+    --delay: 1;
+}
+
+
+
+  @keyframes animate {
+    0% {
+      transform: translateY(100%);
+    }
+    
+  }
+
+.carousel-image img{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    margin-top: 1.3rem;
+}
+
+.date{
+    text-align: right;
 }
 .customers-right{
     text-align: center;
@@ -446,6 +585,8 @@ button{
 .customers-right button{
     margin-top: 1rem;
 }
+
+/* Featured Section */
 
 .featured{
     text-align: center;
@@ -480,10 +621,20 @@ button{
     width: 170px;
 }
 
+@media (min-width: 768px){
+    .featured-logos{
+        flex-direction: row;
+        width: fit-content;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+}
+
 /* Footer */
 
 footer{
-    padding: 2rem;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
     font-size: 12.5px;
 }
 
@@ -508,8 +659,13 @@ footer{
 
 .products-and-company{
     display: flex;
-    gap: 5rem;
 }
+
+.products-and-company > *{
+    flex-basis: 50%;
+}
+
+
 
 .footer-far-right{
     padding-top: 1rem;
@@ -524,11 +680,69 @@ footer{
     gap: 0.5rem;
 }
 
-.footer-bottom{
+.footer-bottom {
     text-align: center;
+    
 }
 
 
 .blue{
     color: #0d60d8;
+    padding-top: 1rem;
+}
+
+@media(min-width: 995px){
+    footer > *{
+        max-width: 72rem;
+        margin: 0 auto;
+    }
+    .footer-top{
+        display: flex;
+    }
+
+    .footer-top > *{
+        flex-basis: 100%;
+    }
+    
+    
+    .footer-logo{
+        width: 150px;
+        height: 30px;
+        margin-right: 1rem;
+        flex-basis: 0;
+        
+    }
+
+    .footer-top ul:nth-child(3) {
+        flex-basis: 40%;
+    }
+     
+
+    .footer-top ul{
+        margin-top: 0;
+        margin-left: 3rem;
+        
+    }
+
+
+    .footer-far-right{
+        flex-basis: 25%;
+        padding-top: 0;
+    }
+
+    .footer-far-right > *{
+        justify-content: flex-end;
+        text-align: right;
+        width: 181px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .footer-bottom > *{
+        width: 745px;
+        margin: 0 auto;
+    }
+    
+
+    
 }

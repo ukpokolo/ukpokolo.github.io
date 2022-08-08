@@ -446,3 +446,36 @@ button{
 .customers-right button{
     margin-top: 1rem;
 }
+
+.featured{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #f9f9f9;
+    padding: 5rem 0;
+}
+
+
+
+.featured-logos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.featured-logos img{
+    margin: 0 auto;
+}
+
+.techpoint{
+    width: 140px;
+}
+
+.guardian{
+    width: 160px;
+}
+
+.crunch{
+    width: 170px;
+}

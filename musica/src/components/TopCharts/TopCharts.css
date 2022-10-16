@@ -1,0 +1,55 @@
+
+.top-charts h3{
+    padding: 1rem 1rem 0rem 1rem;
+}
+.top-charts-con{
+    display: flex;
+    padding: 1rem;
+    flex: 1, 1, auto;
+    min-width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+    gap: 1rem;
+}
+
+.top-charts-con::-webkit-scrollbar {
+    display: none;
+  }
+
+.top-charts-card{
+    background-color: #1A1E1F;
+    height: 233px;
+    min-width: 323px;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.tcc-text :last-child{
+    padding-top: 1rem;
+}
+
+.top-charts-image{
+    width: 80%;
+    padding-bottom: 0.6rem;
+}
+
+.top-charts-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tcc-right{
+    border: 0.5px solid grey;
+    border-radius: 50%;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+}
+
+.tcc-right img{
+    position: absolute;
+    inset: 0.45em;
+    
+}
